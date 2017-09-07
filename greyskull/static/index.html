@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <title>Pluecast</title>
+        <style>
+            html {
+                background: #474747 url('data:image/png;base64,\
+                    iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAAGFBMVEU/Pz9AQEBBQUFCQkJDQ0NE\
+                    RERFRUVGRkbtSaR+AAABYklEQVQYGQXBQXoTMQwGUH09Ap1wgLEcto3126xjSbOmttwDJBMuANyf\
+                    90i61PpMoQ1VEY2yXAcHNPOHfyJVKkOF7YSX3jPMCA/Ah5qYhA8oSdFhFdm0S5kGmnivKDjZD2WM\
+                    B01p041NVPxiCeQ/+nqMPYnqsc066bX7etS/xmxdYgf1kMoC1a0b+gJZjogp96fa91WeJ+01GKqB\
+                    dEiSJBR378A8h0/xFh9UikGSb8JWEeJknr9+RuzIoRPxRoLZG9jF9OheXsRotjuMg8GjgWq78VLX\
+                    8kTneFs0dKWKKc4mN3ZQnOWFoeNfke72ElLdjF0laXTmyRSXyuPbk80r1rTfZHDzlmG9+3X1RIg8\
+                    CkMqsK6yGoEFZ6tsYuKslRBWA3aoMc4KUL7ZZ7+0kkZD9yvIYvOs8/U+rU4V0D36L1HdML0zWyYz\
+                    mP5R6JrlYbJouqE5xsHqB65CgnoKxLYu1iz6f4OBeffY87rNAAAAAElFTkSuQmCC');
+            }
+            body {
+                font-family: sans-serif;
+                width: 800px; height: 100%;
+                margin: 0 auto 0 auto; padding: 0;
+            }
+            h1 {
+                font-size: 64px;
+                text-align: center;
+                color: #999;
+                text-shadow: 0px 3px 8px #2a2a2a;
+                padding: 0.5em; padding-bottom: 0;
+            }
+            h1 > span {
+                display: block;
+                font-size: 18px;
+                margin: 0 auto 0 auto;
+            }
+            h2 {
+                text-align: center;
+                color: #222;
+                text-shadow: 0px 2px 3px #555;
+            }
+            div {
+                width: 42.5%; height: auto;
+                color: #555;
+                text-shadow: 0px 2px 3px #171717;
+                background: #222;
+                margin: 0 auto; padding: 20px;
+                -webkit-box-shadow: 0px 2px 3px #555; -moz-box-shadow: 0px 2px 3px #555;
+                box-shadow: 0px 2px 3px #555;
+                -webkit-border-radius: 10px; -moz-border-radius: 10px;
+                border-radius: 10px;
+            }
+            h2 + div {
+                float: left;
+                margin-left: 8px;
+            }
+            div + div {
+                float: right;
+                margin-right: 8px;
+            }
+            div + div > p {
+                margin-bottom: 15px;
+            }
+            footer {
+                display: block;
+                clear: both;
+                width: 100%;
+                text-align: center;
+            }
+            script + a {
+                font-size: 16px !important;
+                color: #999 !important;
+                text-shadow: 0px 3px 8px #2a2a2a;
+            }
+            p {
+                padding-right: 1em; padding-left: 1em;
+            }
+            a {
+                color: #999;
+                text-decoration: none;
+            }
+        </style>
+        <link
+            rel="shortcut icon"
+            href="/favicon.ico"
+            type="image/vnd.microsoft.icon"
+        />
+    </head>
+    <body>
+        <h1>
+            <b>Pluecast</b> <span><i>Sharing is caring</i></span>
+        </h1>
+        <h2>This is an <i>experimental</i> tracker!</h2>
+        <div>
+            <p>
+                Feel free to use for any torrent you like, but keep in mind that this 
+                tracker is mostly for experimental and research purposes. For an 
+                extensive compilation of public and open trackers that you can use and 
+                information about their reliability go to <a 
+                href="http://www.trackon.org"><b>Trackon</b></a>.
+            </p>
+            <p>
+                You can use the following address to add this tracker to your torrents:
+            </p>
+            <blockquote>
+                <b>http://pluecast.com/announce</b>
+            </blockquote>
+        </div>
+        <div>
+            <p>
+                Powered by the <a href="http://repo.cat-v.org/atrack/">Atrack 
+                Tracker</a> for Google App Engine.
+            </p>
+            <hr />
+            <p>
+                <i>Note:</i> For privacy and efficiency reasons, atrack does not  
+                implement the scrape protocol and other non-essential BT features, 
+                so you wont see the number of seeders and leechers available in this 
+                tracker, this doesn't mean they aren't there, but atrack doesn't keep 
+                track of that information.
+            </p>
+        </div>
+        <script type="text/javascript">
+            (function() {
+                "use strict";
+                function async_load(){
+                    var s = document.createElement('script'),
+                        x = document.getElementsByTagName('script')[0];
+                    s.type = 'text/javascript';
+                    s.async = true;
+                    s.src = 'http://horus.projectbeyond.org/aw.js';
+                    x.parentNode.insertBefore(s, x);
+                }
+                if (window.attachEvent) {
+                    window.attachEvent('onload', async_load);
+                } else {
+                    window.addEventListener('load', async_load, false);
+                }
+            }());
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+            try {
+                var pageTracker = _gat._getTracker("UA-1220719-11");
+                pageTracker._trackPageview();
+                var pageTracker2 = _gat._getTracker("UA-1220719-12");
+                pageTracker2._trackPageview();
+                var pageTracker3 = _gat._getTracker("UA-8286113-6");
+                pageTracker3._trackPageview();
+            } catch(err) {}
+        </script>
+    </body>
+</html>
